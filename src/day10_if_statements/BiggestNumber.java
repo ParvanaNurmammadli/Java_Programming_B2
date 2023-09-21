@@ -2,7 +2,9 @@ package day10_if_statements;
 
 import java.util.Scanner;
 
-public class BiggestNumber {
+public class BiggestNumber
+{
+
     /*
 
     declare and assign 3 int variables
