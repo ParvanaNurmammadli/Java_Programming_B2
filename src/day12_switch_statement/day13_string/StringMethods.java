@@ -1,4 +1,4 @@
-package day13_string;
+package day12_switch_statement.day13_string;
 
 //import java.lang.String; // You do not have to import it. Java by default imports this PACKAGE
 

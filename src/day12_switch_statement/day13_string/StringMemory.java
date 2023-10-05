@@ -1,4 +1,4 @@
-package day13_string;
+package day12_switch_statement.day13_string;
 
 public class StringMemory {
     public static void main(String[] args) {
