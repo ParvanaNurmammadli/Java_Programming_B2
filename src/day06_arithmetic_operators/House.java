@@ -1,7 +1,7 @@
 package day06_arithmetic_operators;
 
 public class House {
-    public class House {
+
         /*
     Create a class House
     create a main method
@@ -42,4 +42,4 @@ public class House {
 
     }
 
-}
+
