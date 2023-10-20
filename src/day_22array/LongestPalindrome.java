@@ -13,7 +13,7 @@ public class LongestPalindrome {
                 Output: No palindrome
 
  */
-    public class LongestPalindrome {
+
         public static void main (String [] args){
             String [] arr = {"java", "longer word", "civic", "apple", "racecar", "mom", "anna"};
             String longestPalindrome = "";
@@ -47,4 +47,4 @@ public class LongestPalindrome {
 
         }
     }
-}
+

@@ -1,5 +1,6 @@
 package day4_variables;
 
+
 public class ShoppingReceipt {
 
 

@@ -1,6 +1,7 @@
 package day05_variables;
 
-public class CellPhone {
+public class
+CellPhone {
     /*
       create a class CellPhone
       create a main method
