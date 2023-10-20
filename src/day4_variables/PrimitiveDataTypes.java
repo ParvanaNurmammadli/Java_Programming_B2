@@ -3,6 +3,7 @@ package day4_variables;
 
     public class PrimitiveDataTypes {
 
+
         public static void main(String [] args){
 
             byte age = 60 ;
