@@ -4,7 +4,7 @@ package day27_index;
 
     import java.util.Scanner;
 
-    public class WrapperClassObject {
+    public class WrapperClassObjects {
 
         public static void main(String[] args) {
 
