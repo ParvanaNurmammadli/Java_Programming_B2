@@ -1,4 +1,4 @@
-package day_22array;
+package day22_array;
 import java.util.Arrays;
 
 public class SortExample {
