@@ -10,7 +10,7 @@ public class AppStore {
 
 
         System.out.println();
-        YouTube objYou = new YouTube( 3.4);
+        Youtube objYou = new Youtube( 3.4);
         objYou.download();
         objYou.subscribe();
 
