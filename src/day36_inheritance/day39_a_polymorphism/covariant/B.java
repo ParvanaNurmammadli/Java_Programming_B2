@@ -1,9 +1,7 @@
-package day39_a_polymorphism.covariant;
+package day36_inheritance.day39_a_polymorphism.covariant;
 
 
-    import day39_a_polymorphism.animal.Animal;
-
-import java.util.ArrayList;
+    import java.util.ArrayList;
 
     public class B extends A {
 

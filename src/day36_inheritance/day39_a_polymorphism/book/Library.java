@@ -1,9 +1,7 @@
-package day39_a_polymorphism.book;
+package day36_inheritance.day39_a_polymorphism.book;
 
 
-    import day36_inheritance.hiding.B;
-
-    public class Library {
+public class Library {
         public static void main(String[] args) {
             JavaTextBook book1 = new JavaTextBook();
             book1.name = "Java Programming";

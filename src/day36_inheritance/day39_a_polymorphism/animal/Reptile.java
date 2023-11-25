@@ -1,4 +1,4 @@
-package day39_a_polymorphism.animal;
+package day36_inheritance.day39_a_polymorphism.animal;
 
 public class Reptile extends Animal {
 
