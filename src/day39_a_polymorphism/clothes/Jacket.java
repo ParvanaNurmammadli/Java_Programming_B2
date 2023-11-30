@@ -1,4 +1,4 @@
-package day36_inheritance.day39_a_polymorphism.clothes;
+package day39_a_polymorphism.clothes;
 
 public class Jacket extends Clothes implements HasHood {
 
