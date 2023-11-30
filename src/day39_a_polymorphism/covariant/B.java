@@ -1,4 +1,4 @@
-package day36_inheritance.day39_a_polymorphism.covariant;
+package day39_a_polymorphism.covariant;
 
 
     import java.util.ArrayList;
