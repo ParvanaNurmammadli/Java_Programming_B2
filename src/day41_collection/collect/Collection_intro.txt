@@ -1,0 +1,154 @@
+
+        Collection
+
+            Data Structure: a way to handle / group multiple data
+
+                1)Array:    store data that has similar data types, but the size is fixed. / built in fracture not object?!
+
+                2)Collection:  different types that handle and manipulate data differently.
+
+                *Collection Framework:
+                    - A group of interfaces and classes that define how the individual Collection will work.
+                        (How data structure will handle data)
+                    -All collection can only hold object types, not primitives (but we can wrap it and use it)
+
+                Main interfaces of Collection Framework:
+                    -Collection: the parent of all Collection types: It defines the main actions of collection.
+                        Ex: add, remove, size
+                    -List:  Ordered (has index), allows duplicates.
+                    -Set:   Unordered (does not have index), not allow duplicates.
+
+                *IQ:  What is the difference between Collection and Collections?
+                    Collection is the interface that all Collection objects (classes that implements) implement.
+                    Collections is a utility class, that has some useful methods that work with collection objects.
+                        -this is not a part of the Collection framework. (frequncy( ), max( ), min( ))
+
+                        We also used Arrays class -- utility class for array objects.
+
+-----------------------------------------------------------------------
+New Topic
+
+    Common Behavior
+        Collection      -Provide base guideline for all other collections, Parent interface
+            List:       -Ordered Collection(indexed), May contain duplicate
+            Set         -A Collection that cannot contain duplicate elements, unordered
+            Queue       -A Collection that Provide First-in-First-Out or Last-In-First-Out structure
+
+            Map         -A Collection of Key-Value pairs.
+-----------------------------------------------------------------------
+New Topic
+
+Classes that implement List Interface:
+
+    ArrayList
+        -uses dynamic arrays in the background
+        -It implemetns List Interface
+        -ADD, REMOVE: these methods works slower because it has to go through manipulation and copying the arrays.
+        -GET: Reading from ArrayList index is faster, because it is reading from array.
+        -Keeps insertion order
+        -Allows duplicates
+
+    LinkedList
+        -internally uses doubly linked logic (NODES objec that refers to each other).
+        -Since, it does not work with indexes, ADDing and REMOVING elements is faster.
+        -ADD, REMOVE: Adding and removing is faster, Pop in a new node or Pop out a node is fast
+        -GET: Reading from LinkedList index is slower, because it need iterate through the nodes.
+        -Keeps insertion order
+        -Allows duplicates
+
+    -Vector:    -Legacy version (Older version) of ArrayList. It did the things that ArrayList does.
+                -Re-sizeable collection, but it is synchronized.
+                    Synchronized: thread-safe:  means that cannot access multiple threads at the same
+                    time. But ArrayList is not thread-safe, meaning we can access at the same time.
+                -Since there is an extra layer of security, it is slower.
+
+
+-----------------------------------------------------------------------
+
+Classes that implement Set Interface:
+
+    -HashSet:       -Not ordered and does NOT allow duplicates
+                    -It is fast and efficient way to work with the data.
+                    -maintenance random order (we don’t need worry about how it handled)
+                      Or order is not guaranteed
+                    -No indexes
+                    -Accepts null values
+
+    -LinkedHashSet  -Not ordered and does NOT allow duplicates
+                    -Is a data structure that maintenance insertion order
+                    -No indexes
+                    -Accepts null values
+
+    -TreeSet:       -Not ordered and does NOT allow duplicates
+                    -implements an interface called “SortedSet” which extends “Set”
+                    -The elements of a TrreeSet are put into the natural order (sorted)/Ascending
+                    -TreeSet does not allow null elements. (will give an exception)
+                    -No indexes
+
+
+-----------------------------------------------------------------------
+
+Classes that implement Queue:
+
+    PriorityQueue: data structure stores elements randomly. null is not allowed (B26 ??)
+    PriorityQueue:      -data structures that stores element in natural order (small to large)
+                -Does NOT allow null elements
+                -Duplicates are allowed
+                -.poll( );
+
+    ArrayDeque      -implements Deque interface
+                -Does not allow null elements.
+                -Works faster than ArrayList.
+
+    Deque (Interface):  -Allowing access to elements from the beginning or end of the collection.
+                .addFirst( ), .addLast( );
+                Inherits Queue
+        -> LinkedList is also implementing this interface
+
+
+            Methods:
+                .add( );        |   .offer ( )  -they both do the same thing
+                .remove( );     |   .poll ( )
+                .element ( );   |   .peek ( )
+
+                -The methods on the left side, add( ), remove ( ), element ( ) will cause exception
+                when they fail.
+                -The methods on the right side, offer( ), poll ( ), peek ( ) will return a value. More
+                specifically, they return null. And we cannot have null
+
+-----------------------------------------------------------------------
+
+Stack Interface
+
+    LIFO - Last in Last out
+                Book3
+                Book2
+                Book1
+
+                So if you want to remove a book, you from the top and take Book3, leaving:
+                Book2
+                Book1
+
+                You want to another one
+                Book4
+                Book2
+                Book1
+
+                So, Book4 would be the one to leave now.
+    Methods:
+
+        .push( )    // add on top of the stack.
+        .peek( )    // only shows what is at the top
+                //also, can be used in sout to show what was    removed
+        .pop( )     //removes whatever element at the top of the stack and returns it
+
+    Note:   Difference between .add( ) and .push( ) ?
+            Both functions the same, puts the element at the end.
+
+            -add( ) -comes from collection interface, it returns Boolean type, you can use index
+            -push( )-comes from stack class, and it returns the object that was pushed.
+                -when using Stack, you should use push( )
+                -Also, think about the reference type of the object
+
+        Difference between .get( ) and .pop( )
+
