@@ -1,4 +1,4 @@
-package HomeTasks;
+package day1_homeTasks;
 
 import Utility.DocuportConstants;
 import Utility.WebDriverFactory;
