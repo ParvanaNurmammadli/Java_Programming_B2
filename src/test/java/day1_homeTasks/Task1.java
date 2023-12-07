@@ -13,14 +13,17 @@ public class Task1 {
         driver.get("https://beta.docuport.app");
         driver.manage().window().maximize();
         WebElement userNameForClient = driver.findElement(By.id("input-14"));
-        userNameForClient.sendKeys(DocuportConstants.USERNAME_CLIENT);
+        userNameForClient.sendKeys(DocuportConstants.USERNAME_ADVISOR);
         WebElement passwordForClient = driver.findElement(By.id("input-15"));
-        passwordForClient.sendKeys(DocuportConstants.PASSWORD_CLIENT);
+        passwordForClient.sendKeys(DocuportConstants.PASSWORD_ADVISOR);
         WebElement loginButton = driver.findElement(By.className("v-btn__content"));
         loginButton.click();
-        WebElement clickSubmit =driver.findElement(By.cssSelector("button[type='submit']"));
-        Thread.sleep(3000);
-        clickSubmit.click();
+       // WebElement clickSubmit =driver.findElement(By.cssSelector("button[type='submit']"));
+       // Thread.sleep(3000);
+      //  clickSubmit.click();
+        Thread.sleep(4000);
+        WebElement exit = driver.findElement(By.cssSelector("span.body-1.white--text"));
+        exit.click();
 
     }
 }
