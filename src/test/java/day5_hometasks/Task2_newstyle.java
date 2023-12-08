@@ -48,6 +48,7 @@ public class Task2_newstyle {
             search.sendKeys("rings" + Keys.ENTER);
 
 
+
             //3. click Estimated Arrival dropdown
             // create dropdown
               WebElement dataVer = driver.findElement(By.xpath("//div[@class='wt-panel-with-trigger']"));
